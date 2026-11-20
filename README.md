@@ -1,7 +1,9 @@
 # RM9HP4 Cam/Lock Fix（`camfix`）
 
-红魔 9S Pro / HyperOS 4 的单模块合并实现：相机启动加速 + 锁屏相机/快捷功能修复，libxposed API 102。
-本目录是从 `camboost`（相机加速）与 `FixLockScreenCamera`（锁屏修复）合并而来，两个旧模块已在设备上停用。
+基于红魔 9S Pro / HyperOS 4 的单模块合并实现：相机启动加速 + 锁屏相机/快捷功能修复，libxposed API 102。
+本目录是从 `camboost`（相机加速）与 `FixLockScreenCamera`（锁屏修复）合并而来。
+本项目基于酷安@施政 NX769J_HyperOS_4.0.0.10_A17_10.12.zip底包修复，感谢大佬的刷机包！
+本项目产物由于需要使用xposed并hook system_server，因此开源并供大伙安全审计用途，目前不具备维护价值；但有PR也会看，感谢支持！
 
 ## 开关
 
