@@ -32,6 +32,7 @@ public final class MainActivity extends Activity {
     private static final String TAG = "RM9HP4CamFix";
     private static final String PREFERENCES = "camfix_switches";
     private static final String RESTART_HINT = "重启生效";
+    private static final String PROJECT_URL = "https://github.com/DefSw0rd/rm9hp4camfix";
 
     private SharedPreferences preferences;
 
@@ -69,7 +70,7 @@ public final class MainActivity extends Activity {
                         + "（计算器、计时、笔记、秒表等）", false);
 
         TextView link = new TextView(this);
-        link.setText("项目地址：https://www.baidu.com/");
+        link.setText("项目地址：" + PROJECT_URL);
         link.setTextSize(12);
         link.setPadding(0, dp(28), 0, 0);
         link.setTextColor(0xFF1A73E8);
@@ -204,7 +205,7 @@ public final class MainActivity extends Activity {
     private void openProjectPage() {
         try {
             startActivity(new android.content.Intent(android.content.Intent.ACTION_VIEW,
-                    android.net.Uri.parse("https://www.baidu.com/")));
+                    android.net.Uri.parse(PROJECT_URL)));
         } catch (Throwable t) {
             Toast.makeText(this, "没有可用的浏览器", Toast.LENGTH_SHORT).show();
         }
