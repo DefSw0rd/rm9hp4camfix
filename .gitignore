@@ -1,0 +1,33 @@
+# ---- 构建产物 ----
+build/
+*.apk
+*.idsig
+*.dex
+*.class
+classes.jar
+res.zip
+
+# ---- 本地工具链 ----
+# JRE 17 + ECJ 3.33 + libxposed API 102 编译期 jar，约 200 MB，不入库。
+# 补齐方法见 README「构建」一节。
+toolchain/
+
+# ---- Python 缓存（tools/ 下的打包脚本）----
+__pycache__/
+*.py[cod]
+
+# ---- 编辑器 / 系统 ----
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 日志与临时文件 ----
+*.log
+*.tmp
+*.bak
+
+# 说明：debug.keystore 有意保留在仓库中（口令是公开的 android / android）。
+# 换掉它会导致已安装旧版本的用户无法覆盖升级，因此不加入忽略列表。
